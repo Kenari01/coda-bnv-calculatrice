@@ -13,32 +13,42 @@ int main()
     printf("Choisissez votre deuxième : ");
     scanf("%d",&n2);
 
-    printf("Choisissez votre types d'opérations + , - , * , / , %  : ");
-    scanf("%s" ,&op);
+    printf("Choisissez votre types d'opérations + , - , * , / , %%  : ");
+    scanf(" %c" ,&op);
   
     if (op == '+')
     {
+      int result = n1 + n2;
         printf("addition\n");
+        printf("%d + %d = %d\n", n1 , n2 , result);
     }
 
     else if (op == '-')
     {
+        int result = n1 - n2;
         printf("soustraction\n");
+        printf("%d - %d = %d\n", n1 , n2 , result);
     }
 
     else if (op == '*')
     {
+        int result = n1 * n2;
         printf("multiplication\n");
+        printf("%d * %d = %d\n", n1 , n2 , result);
     }
 
     else if (op == '/')
     {
+        int result = n1 / n2;
         printf("division\n");
+        printf("%d / %d = %d\n", n1 , n2 , result);
     }
     
     else if (op == '%')
     {
+        int result = n1 % n2;
         printf("modulo\n");
+        printf("%d / %d = %d\n", n1 , n2 , result);
     }
 
     else 
