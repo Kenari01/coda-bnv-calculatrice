@@ -39,16 +39,16 @@ int main()
 
     else if (op == '/')
     {
-        int result = n1 / n2;
+        double result = n1 / n2;
         printf("division\n");
-        printf("%d / %d = %d\n", n1 , n2 , result);
+        printf("%d / %d = %.2f\n", n1 , n2 , result);
     }
     
     else if (op == '%')
     {
-        int result = n1 % n2;
+        double result = n1 % n2;
         printf("modulo\n");
-        printf("%d / %d = %d\n", n1 , n2 , result);
+        printf("%d %% %d = %.2f\n", n1 , n2 , result);
     }
 
     else 
